@@ -1,0 +1,12 @@
+:root {
+  --mainColor: #3778c2;
+  --secondColor: #5fb523;
+  --textColor: #434b54;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--textColor);
+}
