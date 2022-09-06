@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'main#index'
   resources :users
+  resources :categories
 end
