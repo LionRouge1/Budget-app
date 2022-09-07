@@ -1,0 +1,19 @@
+<h1>Home page</h1>
+
+<% @categories.each do |category| %>
+    <%= link_to category_path(category.id), class: "btn-neutre" do %>
+        <div class="d-flex border mb-4 p-2">
+            <div class="col-sm-3">
+                <img src=<%= category.icon %> alt="icon" style="width:200px; height:150px">
+            </div>
+            <div class="col-sm-5">
+                <p><%= category.name %></p>
+            </div>
+            <div class="col-sm-2">
+                <p>$<%= category.total_amount %></p>
+            </div>
+        </div>
+    <% end %>
+<% end %>
+
+<%= link_to "Create new", new_category_path, class: "btn btn-category" %>

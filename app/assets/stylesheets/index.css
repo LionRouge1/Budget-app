@@ -1,0 +1,20 @@
+@font-face {
+  font-family: proxima-nova;
+  src: url(proxim-nova.otf);
+  font-weight: bold;
+}
+
+:root {
+  --mainColor: #3778c2;
+  --secondColor: #5fb523;
+  --textColor: #434b54;
+  --font: proxima-nova;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--textColor);
+  font-family: var(--font);
+}
