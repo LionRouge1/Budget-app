@@ -1,1 +1,32 @@
 <h1>List of transaction</h1>
+<section class="most-recent">
+    <ul>
+        <% for i in (0..5) do %>
+                <%
+                if @entities[i]
+                entity = @entities[i]
+                %>
+                    <li>
+                        <p><%= entity.name %></p>
+                        <p><%= entity.amount %>
+                            <span><%= entity.create_at %></span>
+                        </p>
+                    </li>
+                <% end %>
+        <% end %> 
+    </ul>
+</section>
+<section class="entities hidden">
+    <ul>
+        <% @entities.each do |entity| %>
+            <li>
+                <p><%= entity.name %></p>
+                <p><%= entity.amount %>
+                    <span><%= entity.create_at %></span>
+                </p>
+            </li>
+        <% end %>
+    </ul>
+</section>
+
+<%= link_to "Add new transaction", new_category_transaction_path(@category), class: "btn btn-transaction" %>

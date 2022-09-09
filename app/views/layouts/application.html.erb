@@ -15,8 +15,9 @@
     <% if user_signed_in? %>
       <%= button_to "Logout", destroy_user_session_path, method: :delete, data: { turbo: false }, class:"btn btn-danger" %>
     <% end %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% flash.each do |type, msg| %>
+      <p class=<%= type %> ><%= msg %></p>
+    <% end %>
     <div class="container">
       <%= yield %>
     </div>
