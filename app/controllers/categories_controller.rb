@@ -8,8 +8,8 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    category = Group.find(params[:id])
-    @entities = category.entities.where(user: current_user).order(create_at: :desc)
+    @category = Group.find(params[:id])
+    @entities = @category.entities.where(user: current_user).order(created_at: :desc)
   end
 
   def create
