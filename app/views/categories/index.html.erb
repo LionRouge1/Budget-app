@@ -1,5 +1,4 @@
-<h1>Home page</h1>
-
+<%= render partial: "Shared/navbar", locals: { page_title: "Home page"} %>
 <% @categories.each do |category| %>
     <%= link_to category_path(category.id), class: "btn-neutre" do %>
         <div class="d-flex border mb-4 p-2">
