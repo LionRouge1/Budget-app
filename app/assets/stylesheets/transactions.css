@@ -1,0 +1,36 @@
+.transactions {
+    height: calc(100vh - 236px);
+    overflow-y: scroll;
+}
+
+.transactions > ul {
+    padding-left: 0;
+}
+
+.transactions > ul > li {
+    list-style: none;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.transactions > ul > li > p {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.transactions > ul > li > p span {
+    display: block;
+}
+
+.time {
+    display: block;
+    border-top: 1px solid var(--bg);
+    padding-top: 5px;
+}
+

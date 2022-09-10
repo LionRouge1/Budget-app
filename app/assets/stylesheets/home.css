@@ -70,3 +70,14 @@
    color: white;
    font-size: 20px;
 }
+
+@media screen and (max-width: 900px) {
+   .page-name > h2 {
+      font-size: 20px;
+   }
+
+   .links > a,
+   .links > input[type="submit"] {
+      font-size: 15px;
+   }
+}

@@ -1,5 +1,5 @@
-<h1>New transaction</h1>
-<%= form_with model: @transaction, url: category_transactions_path(category_id: @category.id), loacal: true do |f| %>
+<%= render partial: "Shared/navbar", locals: { page_title: "new transaction"} %>
+<%= form_with model: @transaction, url: category_transactions_path(category_id: @category.id), class: "container mt-4", local: true do |f| %>
     <div class="mb-3">
         <%= f.label :name, class: "form-label" %>
         <%= f.text_field :name, class: "form-control", placeholder: "Name" %>

@@ -1,0 +1,34 @@
+.offcanvas {
+    background-color: var(--mainColor);
+}
+
+.btn-close {
+    color: white;
+}
+
+.fa-bars {
+    cursor: pointer;
+}
+
+.offcanvas-title {
+    font-size: 25px;
+    color: white;
+}
+
+.offcanvas-body > li {
+    list-style: none;
+    height: 40px;
+    margin: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.offcanvas-body > li i {
+    margin: 0 10px;
+}
+
+.offcanvas-body > li span,
+.offcanvas-body > li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
