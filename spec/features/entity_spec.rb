@@ -17,24 +17,24 @@ RSpec.describe 'Transaction page test', type: :feature do
     end
 
     it 'check transaction#index path' do
-      visit "/categories/#{ @group.id }"
+      visit "/categories/#{@group.id}"
       expect(current_path).to eq(category_path(@group.id))
       expect(page).to have_text('Transaction')
     end
 
     it "Should have transaction's names" do
-        visit "/categories/#{ @group.id }"
-        expect(page).to have_content('Transaction 1')
-        expect(page).to have_content('Transaction 2')
+      visit "/categories/#{@group.id}"
+      expect(page).to have_content('Transaction 1')
+      expect(page).to have_content('Transaction 2')
     end
 
     it "Should contain transaction's amounts" do
-        visit "/categories/#{ @group.id }"
-        expect(page).to have_content('$5')
+      visit "/categories/#{@group.id}"
+      expect(page).to have_content('$5')
     end
 
     it "Should navigate to transaction's new page" do
-      visit "/categories/#{ @group.id }"
+      visit "/categories/#{@group.id}"
       click_link 'Add new transaction'
       expect(current_path).to eq(new_category_transaction_path(@group.id))
     end

@@ -8,7 +8,7 @@ RSpec.describe 'Categories', type: :request do
   end
 
   describe 'GET #index' do
-    before(:example) { get "/" }
+    before(:example) { get '/' }
 
     it 'is a success' do
       expect(response).to have_http_status(:ok)

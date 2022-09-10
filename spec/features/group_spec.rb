@@ -23,9 +23,9 @@ RSpec.describe 'Category page test', type: :feature do
       expect(page).to have_content('Beef')
     end
 
-    it "Should contain the sum of entities amounts" do
-        visit '/'
-        expect(page).to have_content('$10')
+    it 'Should contain the sum of entities amounts' do
+      visit '/'
+      expect(page).to have_content('$10')
     end
 
     it "Should navigate to category's new page" do
