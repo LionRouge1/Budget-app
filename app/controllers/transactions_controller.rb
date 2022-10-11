@@ -1,4 +1,6 @@
 class TransactionsController < ApplicationController
+  before_action :authenticate_user!
+
   def new
     @groups = Group.all
     @transaction = Entity.new

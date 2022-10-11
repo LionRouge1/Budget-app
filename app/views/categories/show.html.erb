@@ -1,32 +1,20 @@
-<h1>List of transaction</h1>
-<section class="most-recent">
-    <ul>
-        <% for i in (0..5) do %>
-                <%
-                if @entities[i]
-                entity = @entities[i]
-                %>
-                    <li>
-                        <p><%= entity.name %></p>
-                        <p><%= entity.amount %>
-                            <span><%= entity.create_at %></span>
-                        </p>
-                    </li>
-                <% end %>
-        <% end %> 
-    </ul>
-</section>
-<section class="entities hidden">
+<%= render partial: "Shared/navbar", locals: { page_title: "Transactions"} %>
+<div class="container-fluid d-flex align-items-center justify-content-between bg-white shadow px-4">
+    <img src=<%= @category.icon %> alt="Icon" style="width: 80px; height: 50px" %>
+    <div>$<%= @category.total_amount %></div>
+</div>
+<div class="transactions container mt-4">
     <ul>
         <% @entities.each do |entity| %>
-            <li>
-                <p><%= entity.name %></p>
-                <p><%= entity.amount %>
-                    <span><%= entity.create_at %></span>
-                </p>
-            </li>
+            <% if can? :read, entity %>
+                <li>
+                    <p><span><%= entity.name %></span><span>$<%= entity.amount %></span></p>
+                    <p class="time"><%= entity.create_at %></p>
+                </li>
+            <% end %>
         <% end %>
     </ul>
-</section>
-
-<%= link_to "Add new transaction", new_category_transaction_path(@category), class: "btn btn-transaction" %>
+</div>
+<footer>
+    <%= link_to "Add new transaction", new_category_transaction_path(@category) %>
+</footer>

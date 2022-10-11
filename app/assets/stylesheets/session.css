@@ -1,0 +1,34 @@
+/* .new_user {
+    width: 100%;
+    height: calc(100vh - 62px);
+    background-color: var(--bg);
+} */
+
+.field {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.field > input,
+.field_with_errors > input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--bg);
+  padding-left: 20px;
+}
+
+.field_with_errors > input {
+  background-color: rgba(252, 178, 178, 0.459);
+}
+
+.field > input {
+  background-color: white;
+}
+
+.check {
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+}

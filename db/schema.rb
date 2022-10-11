@@ -24,8 +24,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_211946) do
   end
 
   create_table "entities_groups", id: false, force: :cascade do |t|
-    t.bigint "group_id", null: false
-    t.bigint "entity_id", null: false
+    t.bigint "group_id"
+    t.bigint "entity_id"
   end
 
   create_table "groups", force: :cascade do |t|

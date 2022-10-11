@@ -1,24 +1,46 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
+# Budget App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+BudgetApp is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-Things you may want to cover:
+## Live demo
+ [Demo](https://budgetapplion.herokuapp.com/)
 
-* Ruby version
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-* System dependencies
+- Copy this link `https://github.com/LionRouge1/Budget-app`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `https://github.com/LionRouge1/Budget-app`.
+- Go to the repository folder in your command prompt `cd Budget-app`.
 
-* Configuration
+- Follow these steps to run the app:
+  - run `gem install`, then run `rails s`
 
-* Database creation
+## Authors
 
-* Database initialization
+👤 **Matchoudi**
 
-* How to run the test suite
+- GitHub: [@LionRouge1](https://github.com/LionRouge1)
+- Twitter: [@Matchoudi1](https://twitter.com/Matchoudi1)
+- LinkedIn: [matchoudi](https://linkedin.com/in/matchoudi)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
