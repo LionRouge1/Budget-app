@@ -89,7 +89,7 @@ body {
 }
 
 .alert,
-#error_explanation  {
+#error_explanation {
   background-color: rgba(243, 131, 131, 0.74);
 }
 
