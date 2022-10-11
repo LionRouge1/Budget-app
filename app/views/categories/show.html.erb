@@ -1,0 +1,20 @@
+<%= render partial: "Shared/navbar", locals: { page_title: "Transactions"} %>
+<div class="container-fluid d-flex align-items-center justify-content-between bg-white shadow px-4">
+    <img src=<%= @category.icon %> alt="Icon" style="width: 80px; height: 50px" %>
+    <div>$<%= @category.total_amount %></div>
+</div>
+<div class="transactions container mt-4">
+    <ul>
+        <% @entities.each do |entity| %>
+            <% if can? :read, entity %>
+                <li>
+                    <p><span><%= entity.name %></span><span>$<%= entity.amount %></span></p>
+                    <p class="time"><%= entity.create_at %></p>
+                </li>
+            <% end %>
+        <% end %>
+    </ul>
+</div>
+<footer>
+    <%= link_to "Add new transaction", new_category_transaction_path(@category) %>
+</footer>

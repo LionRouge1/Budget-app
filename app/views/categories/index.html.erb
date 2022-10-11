@@ -1,0 +1,22 @@
+<%= render partial: "Shared/navbar", locals: { page_title: "Categories"} %>
+<div class="categories container">
+    <% @categories.each do |category| %>
+        <%= link_to category_path(category.id), class: "btn-neutre" do %>
+            <div class="d-flex mb-3 p-2">
+                <div class="col-sm-3">
+                    <img src=<%= category.icon %> alt="icon">
+                </div>
+                <div class="col-sm-5">
+                    <p><%= category.name %></p>
+                </div>
+                <div class="col-sm-2">
+                    <p>$<%= category.total_amount %></p>
+                </div>
+            </div>
+        <% end %>
+    <% end %>
+</div>
+
+<footer>
+    <%= link_to "Add a new category", new_category_path %>
+</footer>
