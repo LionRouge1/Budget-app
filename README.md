@@ -5,8 +5,6 @@ BudgetApp is mobile web application where you can manage your budget: you have a
 
 ## Live demo
  [Demo](https://budgetapplion.herokuapp.com/)
-## Video
- [video](https://www.loom.com/share/36325bb7b5914c0abdba357e8b9ea4d7)
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
@@ -42,7 +40,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Original design idea by Gregoire Vella on Behance.
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
