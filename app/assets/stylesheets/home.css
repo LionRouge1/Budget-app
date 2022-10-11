@@ -70,6 +70,29 @@ body {
   font-size: 20px;
 }
 
+.flash,
+#error_explanation {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#error_explanation ul li {
+  color: white;
+  font-weight: bold;
+}
+
+.notice {
+  background-color: rgba(0, 128, 43, 0.507);
+}
+
+.alert,
+#error_explanation  {
+  background-color: rgba(243, 131, 131, 0.74);
+}
+
 @media screen and (max-width: 900px) {
   .page-name > h2 {
     font-size: 20px;
